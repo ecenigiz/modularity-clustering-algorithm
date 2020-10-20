@@ -20,9 +20,9 @@ public class FileOperations {
                 String[] lineSplit = data.split(" ");
 
                 FileLine line = new FileLine();
-                line.name=lineSplit[0];
-                line.childLib = lineSplit[1];
-                line.parentLib=lineSplit[2];
+                line.Name=lineSplit[0];
+                line.ChildLib = lineSplit[1];
+                line.ParentLib=lineSplit[2];
                 array.add(line);
             }
             myReader.close();
@@ -50,7 +50,7 @@ public class FileOperations {
 
         for (FileLine fileLine : list)
         {
-            bufferedWriter.write(fileLine.name + " "+ fileLine.childLib + " " + fileLine.parentLib);
+            bufferedWriter.write(fileLine.Name + " "+ fileLine.ParentLib + " " + fileLine.ChildLib);
             bufferedWriter.newLine();
         }
 

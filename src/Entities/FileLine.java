@@ -1,7 +1,18 @@
 package Entities;
 
-public class FileLine {
-    public String name;
-    public String childLib;
-    public String parentLib;
+public class FileLine implements  Comparable<FileLine> {
+    public String Name;
+    public String ChildLib;
+    public String ParentLib;
+    public boolean IsClustered;
+
+    @Override
+    public int compareTo(FileLine f) {
+        int result = this.Name.compareToIgnoreCase(f.Name);
+        if(result != 0){
+            return result;
+        }else{
+            return new String(this.Name).compareTo(new String(f.Name));
+        }
+    }
 }

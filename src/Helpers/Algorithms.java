@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Algorithms {
     String date;
@@ -20,6 +21,7 @@ public class Algorithms {
         ArrayList<FileLine> list = FileOperations.readFile(inputPath);
         //FileLine objesinde list dönüyor => işlemleri bunun üzerinden yapabilelim
 
+        list = applyOwnAlgorithm(list);
         //algorithm kullanılcak, list nasıl yazılcaksa o hale gelecek
         FileOperations.createFile(folderPath, "first_own_algorithm", list);
         //dizi gönderip dizi yazdırabilir
@@ -29,5 +31,33 @@ public class Algorithms {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
         LocalDateTime now = LocalDateTime.now();
         return dtf.format(now);
+    }
+
+    public ArrayList<FileLine> applyOwnAlgorithm(ArrayList<FileLine> list){
+        int selectedIndex=0;
+        String selectedLibrary;
+        ArrayList<FileLine> appliedAlgorithmList = new ArrayList<FileLine>();
+        FileLine line;
+
+        for(int i = 0; i<list.size(); i++){
+            if(!list.get(i).IsClustered){
+                selectedIndex = i;
+                selectedLibrary = list.get(i).ParentLib;
+
+                for (int j = selectedIndex; j<list.size(); j++){
+                    if(selectedLibrary.equals(list.get(j).ParentLib))
+                    {
+                        line = new FileLine();
+                        line.Name = "library_" + selectedLibrary;
+                        line.ParentLib = selectedLibrary;
+                        line.ChildLib = list.get(j).ChildLib;
+                        line.IsClustered = true;
+                        appliedAlgorithmList.add(line);
+                    }
+                }
+            }
+        }
+        Collections.sort(appliedAlgorithmList);
+        return appliedAlgorithmList;
     }
 }
