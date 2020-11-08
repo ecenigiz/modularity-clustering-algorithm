@@ -33,22 +33,22 @@ public class Algorithms {
         return dtf.format(now);
     }
 
-    public ArrayList<FileLine> applyOwnAlgorithm(ArrayList<FileLine> list){
-        int selectedIndex=0;
+    public ArrayList<FileLine> applyOwnAlgorithm(ArrayList<FileLine> list) {
+        int selectedIndex = 0;
+        int libaryCount = 0;
         String selectedLibrary;
         ArrayList<FileLine> appliedAlgorithmList = new ArrayList<FileLine>();
-        FileLine line;
+        FileLine line = null;
 
-        for(int i = 0; i<list.size(); i++){
-            if(!list.get(i).IsClustered){
+        for (int i = 0; i < list.size(); i++) {
+            if (!list.get(i).IsClustered) {
                 selectedIndex = i;
                 selectedLibrary = list.get(i).ParentLib;
-
-                for (int j = selectedIndex; j<list.size(); j++){
-                    if(selectedLibrary.equals(list.get(j).ParentLib))
-                    {
+                libaryCount++;
+                for (int j = selectedIndex; j < list.size(); j++) {
+                    if (selectedLibrary.equals(list.get(j).ParentLib)) {
                         line = new FileLine();
-                        line.Name = "library_" + selectedLibrary;
+                        line.Name = Integer.toString(libaryCount);
                         line.ParentLib = selectedLibrary;
                         line.ChildLib = list.get(j).ChildLib;
                         line.IsClustered = true;

@@ -50,7 +50,8 @@ public class FileOperations {
 
         for (FileLine fileLine : list)
         {
-            bufferedWriter.write(fileLine.Name + " "+ fileLine.ParentLib + " " + fileLine.ChildLib);
+            //bufferedWriter.write(fileLine.Name + " "+ fileLine.ParentLib + " " + fileLine.ChildLib);
+            bufferedWriter.write("contain "+ fileLine.ParentLib + " " + fileLine.ChildLib);
             bufferedWriter.newLine();
         }
 
