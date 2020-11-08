@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2be7369d-9c9d-4d4f-a2c1-8a0da0428aef" name="Default Changelist" comment="initial commit &amp; file operations">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_22_36_19/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_22_36_26/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_22_38_41/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_22_39_04/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_08_39/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_08_56/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_11_29/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_11_54/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_20_06/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_20_29/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/2020_10_19_23_22_01/first_own_algorithm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Algorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/FileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/FileOperations.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j6esWD3ALRDLQezQ268YsGoLxn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="clustered_algorithm_v0" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="clustered_algorithm_v0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2be7369d-9c9d-4d4f-a2c1-8a0da0428aef" name="Default Changelist" comment="" />
+      <created>1603129175792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603129175792</updated>
+    </task>
+    <task id="LOCAL-00001" summary="initial commit &amp; file operations">
+      <created>1603140049701</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603140049701</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implement first algorithm">
+      <created>1603222952615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603222952615</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implement first own algorithm">
+      <created>1603223082151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603223082151</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit &amp; file operations" />
+    <MESSAGE value="Implement first algorithm" />
+    <MESSAGE value="Implement first own algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement first own algorithm" />
+  </component>
+</project>
