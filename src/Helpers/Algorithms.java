@@ -1,63 +1,58 @@
 package Helpers;
 
-import Entities.FileLine;
+import Entities.InputFileLine;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Algorithms {
-    String date;
     String folderPath;
 
-    public Algorithms() throws IOException {
-        date = getDate();
-        folderPath = FileOperations.createFolder(date); //klasörün path i output\2020_10_19_21_49_23
+    public Algorithms(String folderPath) {
+        this.folderPath = folderPath;
     }
 
-    public void firstOwnAlgorithm(String inputPath) throws IOException {
-        ArrayList<FileLine> list = FileOperations.readFile(inputPath);
-        //FileLine objesinde list dönüyor => işlemleri bunun üzerinden yapabilelim
+    public String firstOwnAlgorithm(ArrayList<InputFileLine> list) throws IOException {
 
         list = applyOwnAlgorithm(list);
-        //algorithm kullanılcak, list nasıl yazılcaksa o hale gelecek
+
         FileOperations.createFile(folderPath, "first_own_algorithm", list);
-        //dizi gönderip dizi yazdırabilir
+
+        return folderPath + "\\" + "first_own_algorithm.txt";
     }
 
-    public static String getDate() {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
-        LocalDateTime now = LocalDateTime.now();
-        return dtf.format(now);
-    }
 
-    public ArrayList<FileLine> applyOwnAlgorithm(ArrayList<FileLine> list) {
+    public ArrayList<InputFileLine> applyOwnAlgorithm(ArrayList<InputFileLine> list) {
+        ArrayList<InputFileLine> clusteredList = new ArrayList<InputFileLine>();
         int selectedIndex = 0;
-        int libaryCount = 0;
-        String selectedLibrary;
-        ArrayList<FileLine> appliedAlgorithmList = new ArrayList<FileLine>();
-        FileLine line = null;
+        int clusterCount = 0;
+        String selectedLibrary = "";
+        ArrayList<InputFileLine> appliedAlgorithmList = new ArrayList<InputFileLine>();
+        InputFileLine line = null;
 
+        //kendisini ve kendisi ile ilk 3 harfi aynı olanları aynı kümeye alır
         for (int i = 0; i < list.size(); i++) {
             if (!list.get(i).IsClustered) {
-                selectedIndex = i;
-                selectedLibrary = list.get(i).ParentLib;
-                libaryCount++;
-                for (int j = selectedIndex; j < list.size(); j++) {
-                    if (selectedLibrary.equals(list.get(j).ParentLib)) {
-                        line = new FileLine();
-                        line.Name = Integer.toString(libaryCount);
-                        line.ParentLib = selectedLibrary;
-                        line.ChildLib = list.get(j).ChildLib;
-                        line.IsClustered = true;
-                        appliedAlgorithmList.add(line);
+                clusterCount++;
+                line = new InputFileLine();
+                line.Name = "Contain";
+                line.ClusterName = Integer.toString(clusterCount);
+                line.ChildLib = list.get(i).ChildLib;
+                line.IsClustered = true;
+                appliedAlgorithmList.add(line);
+
+                selectedLibrary = list.get(i).ChildLib;
+                for (int j = i; j < list.size(); j++) {
+                    if (selectedLibrary.equals(list.get(j).ChildLib)) {
+                        list.get(j).IsClustered = true;
                     }
                 }
             }
         }
+
         Collections.sort(appliedAlgorithmList);
         return appliedAlgorithmList;
     }
+
 }
