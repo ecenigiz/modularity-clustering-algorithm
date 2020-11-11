@@ -27,18 +27,19 @@ public class Main {
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
         String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(list);
 
-        //Calculation
         ModulDependencyCalculator c = new ModulDependencyCalculator();
-        String toPath = "bash-gt.rsf";
-        double calculateDependency = c.CalculateDependency(inputPath,toPath);
+
+        //Calculation
+        String clusteredPath = "bash-gt.rsf";
+        double calculateDependency = c.CalculateDependency(inputPath, clusteredPath);
         System.out.println("Bash alg calculation: " + calculateDependency);
 
         //FirstOwnAlgorithm
-         calculateDependency = c.CalculateDependency(outputPathFirstAlgorthm,toPath);
+        calculateDependency = c.CalculateDependency(inputPath, outputPathFirstAlgorthm);
         System.out.println("First algorithm calculation: " + calculateDependency);
 
         //GenetikAlgorithm random population
-        calculateDependency = c.CalculateDependency(outputPathGeneticAlgorithm,toPath);
+        calculateDependency = c.CalculateDependency(inputPath, outputPathGeneticAlgorithm);
         System.out.println("Genetik algorithm calculation: " + calculateDependency);
     }
 
