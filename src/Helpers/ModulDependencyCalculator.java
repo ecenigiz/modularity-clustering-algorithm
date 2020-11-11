@@ -1,14 +1,10 @@
 package Helpers;
 
 import Entities.InputFileLine;
+
 import java.util.ArrayList;
 
 public class ModulDependencyCalculator {
-
-    double totalSum = 0;
-    int edgeWeigthIsExist = 1;
-    int edgeWeigthIsNotExist = 0;
-    int clusterCount = 1;
 
     public double CalculateDependency(String fromPath, String toPath) {
         long startTime = System.currentTimeMillis();
@@ -16,6 +12,11 @@ public class ModulDependencyCalculator {
         ArrayList<InputFileLine> firstList = FileOperations.readInputFile(fromPath);
         ArrayList<InputFileLine> clusteredList = FileOperations.readOutputFile(toPath);
 
+        double totalSum = 0;
+        int edgeWeigthIsExist = 1;
+        int edgeWeigthIsNotExist = 0;
+        int clusterCount = 1;
+        int totalEdgeCount = clusteredList.size();
         int[] eachOfEdgeCount = new int[clusteredList.size()];
 
         //Kaç tane farklı küme var bunu buluyoruz
@@ -25,8 +26,8 @@ public class ModulDependencyCalculator {
                 if (clusteredList.get(i).ClusterName.equals(clusteredList.get(j).ClusterName))
                     break;
             }
-                if (i == j)
-                    clusterCount++;
+            if (i == j)
+                clusterCount++;
         }
 
 
@@ -55,52 +56,34 @@ public class ModulDependencyCalculator {
             }
         }
 
-        //Hesaplama kısmı yöntem 1
+        //Hesaplama kısmı
+        double toplamCluster = 0;
+        double toplamEdge = 0;
         for (int i = 0; i < clusterCount; i++) {
             for (int j = 0; j < clusterHasEdge[i]; j++) {
                 for (int l = j + 1; l < clusterHasEdge[i]; l++) {
                     boolean flag = false;
                     for (int k = 0; k < firstList.size(); k++) {
-                        boolean x1 = (firstList.get(k).ChildLib.equals(clusteredList.get(i).ChildLib)
-                                && firstList.get(k).ParentLib.equals(clusteredList.get(j).ChildLib));
-                        boolean x2 = (firstList.get(k).ParentLib.equals(clusteredList.get(i).ChildLib)
-                                && firstList.get(k).ChildLib.equals(clusteredList.get(j).ChildLib));
+                        boolean x1 = clusteredList.get(i).ChildLib.equals(firstList.get(k).ChildLib)
+                                || clusteredList.get(i).ChildLib.equals(firstList.get(k).ParentLib);
 
-                        if (x1 || x2) flag = true;
+                        boolean x2 = clusteredList.get(j).ChildLib.equals(firstList.get(k).ChildLib)
+                                || clusteredList.get(j).ChildLib.equals(firstList.get(k).ParentLib);
+
+                        if (x1 && x2) flag = true;
                     }
                     if (flag) {
-                        totalSum += edgeWeigthIsExist - ((double) (eachOfEdgeCount[i] * eachOfEdgeCount[j]) / (2 * clusterCount));
+                        toplamEdge = toplamEdge + edgeWeigthIsExist - ((double) (eachOfEdgeCount[i] * eachOfEdgeCount[j]) / (2 * totalEdgeCount));
                     } else {
-                        totalSum += edgeWeigthIsNotExist - ((double) (eachOfEdgeCount[i] * eachOfEdgeCount[j]) / (2 * clusterCount));
+                        toplamEdge = toplamEdge + (edgeWeigthIsNotExist - ((double) (eachOfEdgeCount[i] * eachOfEdgeCount[j]) / (2 * totalEdgeCount)));
                     }
                 }
             }
+            toplamCluster += toplamEdge;
+            toplamEdge = 0;
         }
 
-    //Hesaplama kısmı yöntem 2
-        /*for (int i = 0; i < clusteredList.size(); i++) {
-            for (int j = i + 1; j < clusteredList.size(); j++) {
-                boolean flag = false;
-                if (clusteredList.get(i).ClusterName.equals(clusteredList.get(j).ClusterName)) { //aynı kümedelerse
-                    for (int k = 0; k < firstList.size(); k++) {
-                        boolean x1 = (firstList.get(k).ChildLib.equals(clusteredList.get(i).ChildLib)
-                                && firstList.get(k).ParentLib.equals(clusteredList.get(j).ChildLib));
-                        boolean x2 = (firstList.get(k).ParentLib.equals(clusteredList.get(i).ChildLib)
-                                && firstList.get(k).ChildLib.equals(clusteredList.get(j).ChildLib));
-
-                        if (x1 || x2) flag = true;
-                    }
-                    if (flag) {
-                        totalSum += edgeWeigthIsExist - ((double) (eachOfEdgeCount[i] * eachOfEdgeCount[j]) / (2 * clusterCount));
-                    } else {
-                        totalSum += edgeWeigthIsNotExist - ((double) (eachOfEdgeCount[i] * eachOfEdgeCount[j]) / (2 * clusterCount));
-                    }
-                } else
-                    j = clusteredList.size();
-            }
-        }*/
-
-        totalSum = totalSum / (2 * clusterCount);
+        totalSum = toplamCluster / (2 * totalEdgeCount);
         long estimatedTime = System.currentTimeMillis() - startTime;
         System.out.println("Hesaplamada harcanan süre: " + estimatedTime);
         return totalSum;

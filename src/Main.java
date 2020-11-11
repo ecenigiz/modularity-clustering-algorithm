@@ -18,7 +18,7 @@ public class Main {
         date = getDate();
         folderPath = FileOperations.createFolder(date); //klasörün path i output\2020_10_19_21_49_23
 
-        String inputPath = "input/bash-inc-dep.txt";
+        String inputPath = "input/bash-inc-dep2.txt";
         ArrayList<InputFileLine> list = FileOperations.readInputFile(inputPath);
 
         Algorithms algorithms = new Algorithms(folderPath);
@@ -27,8 +27,9 @@ public class Main {
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
         String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(list);
 
-        //Calculation
         ModulDependencyCalculator c = new ModulDependencyCalculator();
+
+        //Calculation
         String toPath = "bash-gt.rsf";
         double calculateDependency = c.CalculateDependency(inputPath,toPath);
         System.out.println("Bash alg calculation: " + calculateDependency);
