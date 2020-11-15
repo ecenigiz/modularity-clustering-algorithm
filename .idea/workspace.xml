@@ -1,11 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2be7369d-9c9d-4d4f-a2c1-8a0da0428aef" name="Default Changelist" comment="add calculation operation">
+    <list default="true" id="2be7369d-9c9d-4d4f-a2c1-8a0da0428aef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_13_45/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_13_45/genetic_algorithm0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_13_45/genetic_algorithm1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_13_45/genetic_algorithm2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_13_45/genetic_algorithm3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_13_45/genetic_algorithm4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_0_9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_1_9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_15.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_18.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_19.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_21.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_2_9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_15.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_18.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_19.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_21.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_3_9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_4_9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_5_7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_6_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_6_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_6_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_6_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_6_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_6_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_7_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_7_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_7_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_7_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_7_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_8_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_8_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_8_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_8_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_8_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_9_0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_9_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_9_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_9_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_15_10_19_25/genetic_algorithm_9_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/Population.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TurboMq/FileParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TurboMq/TurboMQ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/clustered_algorithm_v0/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clustered_algorithm_v0/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Algorithms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helpers/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/GeneticAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/ModulDependencyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/ModulDependencyCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +142,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -24,14 +150,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="add-first-algorithm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1j6esWD3ALRDLQezQ268YsGoLxn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/output" />
     <property name="project.structure.last.edited" value="Project" />
@@ -134,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605112893329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add sth">
+      <created>1605119779797</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605119779797</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,13 +287,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit &amp; file operations" />
     <MESSAGE value="Implement first algorithm" />
     <MESSAGE value="Implement first own algorithm" />
     <MESSAGE value="add file change to mojoFm distance" />
     <MESSAGE value="add prepare population to genetic algorithm &#10;add calculation operation" />
     <MESSAGE value="add calculation operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add calculation operation" />
+    <MESSAGE value="add sth" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,6 +309,11 @@
           <url>file://$PROJECT_DIR$/src/Helpers/ModulDependencyCalculator.java</url>
           <line>76</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TurboMq/FileParse.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 import Helpers.GeneticAlgorithm;
 import Helpers.ModulDependencyCalculator;
+import TurboMq.TurboMQ;
 
 public class Main {
     static String date;
@@ -18,15 +19,20 @@ public class Main {
         date = getDate();
         folderPath = FileOperations.createFolder(date); //klasörün path i output\2020_10_19_21_49_23
 
+        int clusterCount = 10;
         String inputPath = "input/bash-inc-dep.txt";
-        ArrayList<InputFileLine> list = FileOperations.readInputFile(inputPath);
+        ArrayList<InputFileLine> listFirstAlgorithm = FileOperations.readInputFile(inputPath);
+        ArrayList<InputFileLine> listGeneticAlgorithm = FileOperations.readInputFile(inputPath);
 
         Algorithms algorithms = new Algorithms(folderPath);
-        String outputPathFirstAlgorthm = algorithms.firstOwnAlgorithm(list);
+        String outputPathFirstAlgorthm = algorithms.firstOwnAlgorithm(listFirstAlgorithm);
 
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
-        String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(list);
-
+        String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
+        String clusteredPath = "bash-gt.rsf";
+        TurboMQ t = new TurboMQ();
+        t.TurboMQCalculate(inputPath, clusteredPath);
+/*
         ModulDependencyCalculator c = new ModulDependencyCalculator();
 
         //Calculation
@@ -40,7 +46,7 @@ public class Main {
 
         //GenetikAlgorithm random population
         calculateDependency = c.CalculateDependency(inputPath, outputPathGeneticAlgorithm);
-        System.out.println("Genetik algorithm calculation: " + calculateDependency);
+        System.out.println("Genetik algorithm calculation: " + calculateDependency);*/
     }
 
     public static String getDate() {
