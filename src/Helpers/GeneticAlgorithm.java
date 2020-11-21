@@ -1,13 +1,14 @@
 package Helpers;
 
-
 import Entities.InputFileLine;
 import Entities.Population;
 import TurboMq.TurboMQ;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 
@@ -19,74 +20,103 @@ public class GeneticAlgorithm {
     }
 
     public String applyGeneticALgorithm(ArrayList<InputFileLine> list, int clusterCount) throws IOException {
+
         ArrayList<Population> populations = new ArrayList<Population>();
-        ArrayList<InputFileLine> best = new ArrayList<InputFileLine>();
-        ArrayList<InputFileLine> temp = new ArrayList<InputFileLine>();
-        Population tempPopulation = new Population();
-        String inputPath = "input/bash-inc-dep.txt";
-        String path = "";
+        ArrayList<Population> populationsNew = new ArrayList<Population>();
+        ArrayList<InputFileLine> temp;
+        Population tempPopulation;
+
+        DecimalFormat df = new DecimalFormat("0.000");
 
         TurboMQ t = new TurboMQ();
 
-        // Rasgele populasyon oluşturuyoruz
-        int populasyonCount = 5;
-        for (int i = 0; i < populasyonCount; i++) {
-            temp = preparePopulation(list, clusterCount);
+        double previousClusteredPopulationMax = 0;
 
-            int calculationDependency = 100;
-            tempPopulation = new Population();
-            tempPopulation.ClusterCount = clusterCount;
-            tempPopulation.DependencyCalculation = calculationDependency;
-            tempPopulation.ClusteredItems = temp;
-            populations.add(tempPopulation);
-        }
-        // Oluşturulan ilk populasyonu yazdırıp, hesaplıyoruz
-        for (int i = 0; i < populations.size(); i++) {
-            path = folderPath + "\\genetic_algorithm" + i + ".txt";
-            FileOperations.createFile(folderPath, "genetic_algorithm" + i, populations.get(i).ClusteredItems);
-            populations.get(i).DependencyCalculation = t.TurboMQCalculate(inputPath, path);
+        double bestCalculation = -1;
+        int bestCalculationClusteredCount = 0;
+
+        List<String> col = new ArrayList<String>();
+        for (int i = 0; i < list.size(); i++) {
+            col.add(list.get(i).ChildLib);
         }
 
-        // Collections.reverse(populations); ->buyukten kucuge ıcın yapabilirsin
-        //küçükten büyüğe sıralıyoruz
-        Collections.sort(populations);
+        int countOfDistincLine = (int) (col.stream().distinct().count());
 
-        // En iyi ilk elemanı seçiyoruz
-        int selectedPopulationCount = 3;
-        for (int i = 0; i < populations.size() - selectedPopulationCount; i++) {
-            populations.remove(i);
-        }
+        int power = (int) Math.round(Math.log(countOfDistincLine) / Math.log(2));
+        int powerDivided2 = power / 2;
+        for (int c = 10; c < 11; c++) {
+        //for (int c = powerDivided2; c < powerDivided2  + power; c++) {
+            clusterCount = c;
+            populations = new ArrayList<Population>();
 
-        //while döngüsü burda olcak mesela 10 kere yapabilirsin ya da max calculatıon azalana kadar yapabilirsin
-        //10 kere populasyonu crossover yapıyoruz, mutasyon yapıyoruz, hesaplayıp en ıyı 10 u secıyoruz
-        for (int count = 0; count < 10; count++) {
+            // Rasgele populasyon oluşturuyoruz
+            int populasyonCount = 10;
+            for (int i = 0; i < populasyonCount; i++) {
+                temp = preparePopulation(list, clusterCount);
+                Collections.sort(temp);
+                Collections.reverse(temp);
 
-            populations = applyCrossOverDivideHalf(populations);
+                tempPopulation = new Population();
+                tempPopulation.ClusterCount = clusterCount;
+                tempPopulation.ClusteredItems = temp;
 
-            populations = applyMutation(populations, clusterCount);
-
-            //Büyükten küçüğe sıralıyoruz
-            Collections.sort(populations);
-            Collections.reverse(populations);
-
-            // En iyi ilk elemanı seçiyoruz
-            for (int i = selectedPopulationCount; i < populations.size(); i++) {
-                populations.remove(i);
+                populations.add(tempPopulation);
             }
 
-            for (int i = 0; i < populations.size(); i++) {
-                path = folderPath + "\\genetic_algorithm_" + count + "_" + i + ".txt";
-                FileOperations.createFile(folderPath, "genetic_algorithm_" + count + "_" + i, populations.get(i).ClusteredItems);
-                populations.get(i).DependencyCalculation = t.TurboMQCalculate(inputPath, path);
-            }
-            // En iyi ilk elemanı seçiyoruz
-            Collections.sort(populations);
-            selectedPopulationCount = 3;
-            for (int i = 0; i < populations.size() - selectedPopulationCount; i++) {
-                populations.remove(i);
+            populationsNew = populations;
+            int populationCount = 1000;
+            int selectedPopulationCount = 10;
+            //100 kere populasyonu crossover yapıyoruz, mutasyon yapıyoruz,
+            // hesaplayıp en ıyı 10 u secıyoruz
+            for (int count = 0; count < populationCount; count++) {
+
+                for (int i = 0; i < populationsNew.size(); i++) {
+                    populationsNew.get(i).DependencyCalculation = t.TurboMQCalculateWithList(list, populationsNew.get(i).ClusteredItems);
+                }
+
+                // populationsNew = new ArrayList<Population>();
+                Collections.sort(populationsNew);
+                Collections.reverse(populationsNew);
+
+
+                //ondalık oalrak 3 basamagı aynı calculation olanları siliyorum
+                for (int i = 0; i < populationsNew.size(); i++) {
+                    for (int j = i + 1; j < populationsNew.size(); j++) {
+                        if (df.format(populationsNew.get(i).DependencyCalculation).equals(df.format(populationsNew.get(j).DependencyCalculation))) {
+                            populationsNew.remove(j);
+                            j--;
+                        }
+                    }
+                }
+
+                // En iyi ilk elemanı seçiyoruz
+                int index = populationsNew.size() - 1;
+                while (populationsNew.size() >= selectedPopulationCount) {
+                    populationsNew.remove(index);
+                    index--;
+                }
+
+                if (count != populationCount - 1) {
+                    populations = applyCrossOverDivideHalf(populationsNew);
+
+                    populationsNew = applyMutation(populations, clusterCount);
+                }
             }
 
+            for (int i = 0; i < populationsNew.size(); i++) {
+                String path = folderPath + "\\genetic_algorithm" + i + ".txt";
+                FileOperations.createFile(folderPath, "genetic_algorithm_cluster_" + clusterCount + "_population_number_" + i + "_calculation_" + populationsNew.get(i).DependencyCalculation, populationsNew.get(i).ClusteredItems);
+            }
+
+            if (populationsNew.get(0).DependencyCalculation > previousClusteredPopulationMax) {
+                bestCalculation = populationsNew.get(0).DependencyCalculation;
+                bestCalculationClusteredCount = clusterCount;
+            }
+            previousClusteredPopulationMax = populationsNew.get(0).DependencyCalculation;
         }
+
+        System.out.println("best clustered count: " + bestCalculationClusteredCount);
+        System.out.println("best clustered calculation: " + bestCalculation);
         return folderPath + "\\" + "genetic_algorithm.txt";
 
     }
@@ -97,10 +127,14 @@ public class GeneticAlgorithm {
         Random rand = new Random();
         InputFileLine line = null;
 
+
         for (int i = 0; i < list.size(); i++) {
             clusterName = String.valueOf(rand.nextInt(clusterCount));
-            list.get(i).ClusterName = clusterName;
-            clusteredList.add(list.get(i));
+            line = new InputFileLine();
+            line.Name = "Contain";
+            line.ClusterName = clusterName;
+            line.ChildLib = list.get(i).ChildLib;
+            clusteredList.add(line);
 
             line = new InputFileLine();
             line.Name = "Contain";
@@ -121,10 +155,13 @@ public class GeneticAlgorithm {
                 }
             }
         }
+
         clusteredDistinctList.forEach((temp) -> {
             temp.IsClustered = false;
         });
 
+        Collections.sort(clusteredDistinctList);
+        Collections.reverse(clusteredDistinctList);
         return clusteredDistinctList;
     }
 
@@ -163,10 +200,8 @@ public class GeneticAlgorithm {
                     itemInPopulationNew.add(itemInPopulationItemNew);
                 }
                 populationInPopulationItemNew.ClusteredItems = itemInPopulationNew;
-                int calculation = 100;
-                populationInPopulationItemNew.DependencyCalculation = calculation;
                 newPopulations.add(populationInPopulationItemNew);
-                //genetik yaptıktan sonra, cluster count kayboluyor.
+                //genetik yaptıktan sonra, cluster count kayboluyor. olmıyy
             }
         }
 
@@ -191,8 +226,16 @@ public class GeneticAlgorithm {
             }
         }
 
-        population.addAll(newPopulations);
-        return population;
+        newPopulations.addAll(population);
+        Collections.sort(newPopulations);
+        Collections.reverse(newPopulations);
+
+        newPopulations.forEach((item) -> {
+            Collections.sort(item.ClusteredItems);
+            Collections.reverse(item.ClusteredItems);
+        });
+
+        return newPopulations;
     }
 
     public ArrayList<Population> applyMutation(ArrayList<Population> populations, int clusterCount) {
@@ -253,7 +296,13 @@ public class GeneticAlgorithm {
             }
         }
 
-        populations.addAll(newPopulations);
-        return populations;
+        newPopulations.addAll(populations);
+        Collections.sort(newPopulations);
+        Collections.reverse(newPopulations);
+        newPopulations.forEach((item) -> {
+            Collections.sort(item.ClusteredItems);
+            Collections.reverse(item.ClusteredItems);
+        });
+        return newPopulations;
     }
 }

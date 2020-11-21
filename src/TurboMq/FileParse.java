@@ -1,5 +1,7 @@
 package TurboMq;
 
+import Entities.InputFileLine;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -25,6 +27,17 @@ public class FileParse {
         return sum;
     }
 
+    public FileParse(ArrayList<InputFileLine> list) {
+
+        clusteredItems = new ArrayList<ArrayList<String>>();
+        name2ID = new HashMap<String, Integer>();
+        totalItemCount = 0;
+
+        parseClusteredInputFileEntity(list);
+
+        dsm = new boolean[totalItemCount][totalItemCount];
+    }
+
     public FileParse(String filename) {
 
         clusteredItems = new ArrayList<ArrayList<String>>();
@@ -34,6 +47,29 @@ public class FileParse {
         parseClusteringInputFile(filename);
 
         dsm = new boolean[totalItemCount][totalItemCount];
+    }
+
+    private void parseClusteredInputFileEntity(ArrayList<InputFileLine> list) {
+        String clusterName = "";
+        String currentCluster = "";
+        String itemName = "";
+        int clusterCount = 0;
+
+        for (int i = 0; i < list.size(); i++) {
+            clusterName = list.get(i).ClusterName;
+
+            if (!currentCluster.equals(clusterName)) {
+                currentCluster = clusterName;
+                clusterCount++;
+                clusteredItems.add(new ArrayList<String>());
+            }
+            itemName = list.get(i).ChildLib;
+            clusteredItems.get(clusterCount - 1).add(itemName);
+            name2ID.put(itemName, totalItemCount);
+            totalItemCount++;
+            if(totalItemCount != name2ID.size())
+                clusterName=clusterName;
+        }
     }
 
     private void parseClusteringInputFile(String filename) {
@@ -70,7 +106,28 @@ public class FileParse {
         }
     }
 
+    public void parseDependencyInputFileLineEntity(ArrayList<InputFileLine> list) {
 
+        InputFileLine line=null;
+        int i=0;
+        try {
+            for (i = 0; i < list.size(); i++) {
+                line = list.get(i);
+                dsm[name2ID.get(line.ChildLib)][name2ID.get(line.ParentLib)] = true;
+                dsm[name2ID.get(line.ParentLib)][name2ID.get(line.ChildLib)] = true;
+            }
+        } catch (Exception e) {
+            System.out.println(" i:"+i);
+            System.out.println("dsm: "+ name2ID.get(line.ChildLib));
+            System.out.println("dsm child name: "+ line.ChildLib);
+            System.out.println("dsm: "+ name2ID.get(line.ParentLib));
+            System.out.println("dsm parent name: "+ line.ParentLib);
+
+            System.out.println("list:"+ list.get(i).ClusterName+"class: " + list.get(i).ChildLib+"count: "+list.size());
+
+        }
+
+    }
 
     public void parseDependencyInputFile(String filename) {
         try {

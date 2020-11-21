@@ -31,14 +31,13 @@ public class Main {
         String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
         String clusteredPath = "bash-gt.rsf";
         TurboMQ t = new TurboMQ();
-        t.TurboMQCalculate(inputPath, clusteredPath);
-/*
-        ModulDependencyCalculator c = new ModulDependencyCalculator();
+        System.out.println("Bash alg turbo hesapalaması : "+ t.TurboMQCalculate(inputPath, clusteredPath));
 
+        ModulDependencyCalculator c = new ModulDependencyCalculator();
+/*
         //Calculation
-        String clusteredPath = "bash-gt.rsf";
         double calculateDependency = c.CalculateDependency(inputPath, clusteredPath);
-        System.out.println("Bash alg calculation: " + calculateDependency);
+        System.out.println("Bash alg modularity calculation: " + calculateDependency);
 
         //FirstOwnAlgorithm
         calculateDependency = c.CalculateDependency(inputPath, outputPathFirstAlgorthm);
