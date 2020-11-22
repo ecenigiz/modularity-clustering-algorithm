@@ -29,8 +29,9 @@ public class Main {
 
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
         String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
-        String clusteredPath = "bash-gt.rsf";
+
         TurboMQ t = new TurboMQ();
+        String clusteredPath = "bash-gt.rsf";
         System.out.println("Bash alg turbo hesapalaması : "+ t.TurboMQCalculate(inputPath, clusteredPath));
 
         ModulDependencyCalculator c = new ModulDependencyCalculator();

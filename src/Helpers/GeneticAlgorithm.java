@@ -6,10 +6,8 @@ import TurboMq.TurboMQ;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class GeneticAlgorithm {
@@ -35,6 +33,8 @@ public class GeneticAlgorithm {
         double bestCalculation = -1;
         int bestCalculationClusteredCount = 0;
 
+        //tüm kümeleri ekliyorum, distinc olarak kaç tane oldugunu bulup  2^n denklemini sağlayan n sayısı
+        // cluster baslangıcı= n/2, bitişi 3n/2
         List<String> col = new ArrayList<String>();
         for (int i = 0; i < list.size(); i++) {
             col.add(list.get(i).ChildLib);
@@ -44,8 +44,8 @@ public class GeneticAlgorithm {
 
         int power = (int) Math.round(Math.log(countOfDistincLine) / Math.log(2));
         int powerDivided2 = power / 2;
-        for (int c = 10; c < 11; c++) {
-        //for (int c = powerDivided2; c < powerDivided2  + power; c++) {
+        //for (int c = 10; c < 11; c++) {
+            for (int c = powerDivided2; c < powerDivided2  + power; c++) {
             clusterCount = c;
             populations = new ArrayList<Population>();
 
@@ -64,11 +64,11 @@ public class GeneticAlgorithm {
             }
 
             populationsNew = populations;
-            int populationCount = 1000;
+            int repeatCount = 1000;
             int selectedPopulationCount = 10;
             //100 kere populasyonu crossover yapıyoruz, mutasyon yapıyoruz,
             // hesaplayıp en ıyı 10 u secıyoruz
-            for (int count = 0; count < populationCount; count++) {
+            for (int count = 0; count < repeatCount; count++) {
 
                 for (int i = 0; i < populationsNew.size(); i++) {
                     populationsNew.get(i).DependencyCalculation = t.TurboMQCalculateWithList(list, populationsNew.get(i).ClusteredItems);
@@ -96,7 +96,7 @@ public class GeneticAlgorithm {
                     index--;
                 }
 
-                if (count != populationCount - 1) {
+                if (count != repeatCount - 1) {
                     populations = applyCrossOverDivideHalf(populationsNew);
 
                     populationsNew = applyMutation(populations, clusterCount);
@@ -123,42 +123,28 @@ public class GeneticAlgorithm {
 
     public ArrayList<InputFileLine> preparePopulation(ArrayList<InputFileLine> list, int clusterCount) {
         ArrayList<InputFileLine> clusteredList = new ArrayList<InputFileLine>();
-        String clusterName;
+        ArrayList<InputFileLine> clusteredDistinctList = new ArrayList<InputFileLine>();
+
+        //String clusterName;
         Random rand = new Random();
         InputFileLine line = null;
 
-
+        List<String> col = new ArrayList<String>();
         for (int i = 0; i < list.size(); i++) {
-            clusterName = String.valueOf(rand.nextInt(clusterCount));
+            col.add(list.get(i).ChildLib);
+            col.add(list.get(i).ParentLib);
+        }
+        List<String> distincLine = col.stream().distinct().collect(Collectors.toList());
+
+
+        for (int i = 0; i < distincLine.size(); i++) {
             line = new InputFileLine();
             line.Name = "Contain";
+            String clusterName = String.valueOf(rand.nextInt(clusterCount));
             line.ClusterName = clusterName;
-            line.ChildLib = list.get(i).ChildLib;
-            clusteredList.add(line);
-
-            line = new InputFileLine();
-            line.Name = "Contain";
-            line.ClusterName = clusterName;
-            line.ChildLib = list.get(i).ParentLib;
-            clusteredList.add(line);
+            line.ChildLib = distincLine.get(i);
+            clusteredDistinctList.add(line);
         }
-
-        ArrayList<InputFileLine> clusteredDistinctList = new ArrayList<InputFileLine>();
-        for (int i = 0; i < clusteredList.size(); i++) {
-            if (!clusteredList.get(i).IsClustered) {
-                clusteredList.get(i).IsClustered = true;
-                clusteredDistinctList.add(clusteredList.get(i));
-                for (int j = i + 1; j < clusteredList.size(); j++) {
-                    if (clusteredList.get(i).ChildLib.equals(clusteredList.get(j).ChildLib)) {
-                        clusteredList.get(j).IsClustered = true;
-                    }
-                }
-            }
-        }
-
-        clusteredDistinctList.forEach((temp) -> {
-            temp.IsClustered = false;
-        });
 
         Collections.sort(clusteredDistinctList);
         Collections.reverse(clusteredDistinctList);
@@ -186,16 +172,18 @@ public class GeneticAlgorithm {
                 for (int k = 0; k < itemInPopulationJ.size(); k++) {
                     itemInPopulationItemNew = new InputFileLine();
 
+                    itemInPopulationItemNew.IsClustered = true;
+                    itemInPopulationItemNew.ChildLib = itemInPopulationI.get(k).ChildLib;
+                    itemInPopulationItemNew.Name = itemInPopulationI.get(k).Name;
+
                     if (k < itemInPopulationJ.size() / 2) {
                         itemInPopulationItemNew.ClusterName = itemInPopulationI.get(k).ClusterName;
-                        itemInPopulationItemNew.IsClustered = true;
-                        itemInPopulationItemNew.ChildLib = itemInPopulationI.get(k).ChildLib;
-                        itemInPopulationItemNew.Name = itemInPopulationI.get(k).Name;
+
                     } else {
                         itemInPopulationItemNew.ClusterName = itemInPopulationJ.get(k).ClusterName;
-                        itemInPopulationItemNew.IsClustered = true;
-                        itemInPopulationItemNew.ChildLib = itemInPopulationJ.get(k).ChildLib;
-                        itemInPopulationItemNew.Name = itemInPopulationJ.get(k).Name;
+                        // itemInPopulationItemNew.IsClustered = true;
+                        //itemInPopulationItemNew.ChildLib = itemInPopulationJ.get(k).ChildLib;
+                        //itemInPopulationItemNew.Name = itemInPopulationJ.get(k).Name;
                     }
                     itemInPopulationNew.add(itemInPopulationItemNew);
                 }
@@ -265,14 +253,13 @@ public class GeneticAlgorithm {
                 itemInPopulationNew.add(itemInPopulationItemNew);
             }
             populationInPopulationItemNew.ClusteredItems = itemInPopulationNew;
-            int calculation = 100;
-            populationInPopulationItemNew.DependencyCalculation = calculation;
             populationInPopulationItemNew.ClusterCount = populations.get(j).ClusterCount;
             newPopulations.add(populationInPopulationItemNew);
 
             String randomClusterName = String.valueOf(rand.nextInt(clusterCount));
-            int randomIndex = rand.nextInt(clusterCount);
+            int randomIndex = rand.nextInt(newPopulations.get(j).ClusteredItems.size()-1);
             newPopulations.get(j).ClusteredItems.get(randomIndex).ClusterName = randomClusterName;
+            //burda calculatıon yapabilirsin
         }
 
         //1-1 aynı ıse siliyoz

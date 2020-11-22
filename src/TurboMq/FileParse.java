@@ -67,8 +67,6 @@ public class FileParse {
             clusteredItems.get(clusterCount - 1).add(itemName);
             name2ID.put(itemName, totalItemCount);
             totalItemCount++;
-            if(totalItemCount != name2ID.size())
-                clusterName=clusterName;
         }
     }
 
@@ -117,14 +115,10 @@ public class FileParse {
                 dsm[name2ID.get(line.ParentLib)][name2ID.get(line.ChildLib)] = true;
             }
         } catch (Exception e) {
-            System.out.println(" i:"+i);
             System.out.println("dsm: "+ name2ID.get(line.ChildLib));
             System.out.println("dsm child name: "+ line.ChildLib);
             System.out.println("dsm: "+ name2ID.get(line.ParentLib));
             System.out.println("dsm parent name: "+ line.ParentLib);
-
-            System.out.println("list:"+ list.get(i).ClusterName+"class: " + list.get(i).ChildLib+"count: "+list.size());
-
         }
 
     }
