@@ -21,7 +21,7 @@ public class Algorithms {
 
         return folderPath + "\\" + "first_own_algorithm.txt";
     }
-
+//iki modul cok bagımlıysa, bırlestır.hesaplamayı karsılastır
 
     public ArrayList<InputFileLine> applyOwnAlgorithm(ArrayList<InputFileLine> list) {
         ArrayList<InputFileLine> clusteredList = new ArrayList<InputFileLine>();

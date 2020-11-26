@@ -1,14 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2be7369d-9c9d-4d4f-a2c1-8a0da0428aef" name="Default Changelist" comment="add calculation operation">
+    <list default="true" id="2be7369d-9c9d-4d4f-a2c1-8a0da0428aef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_20_58/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_22_19/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_24_36/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_0_calculation_0.3563532445412962.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_1_calculation_0.3554606437492828.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_2_calculation_0.35448987658368375.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_3_calculation_0.3534119937999189.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_4_calculation_0.3524563777456618.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_5_calculation_0.35149296591443885.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_6_calculation_0.35046839521510237.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_7_calculation_0.34949560912600003.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_3_population_number_8_calculation_0.34844742245041105.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_0_calculation_0.2845117845117845.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_1_calculation_0.2690077319587629.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_2_calculation_0.26836581709145424.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_3_calculation_0.26679841897233203.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_4_calculation_0.26006441223832527.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_5_calculation_0.2563025210084034.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_6_calculation_0.25542571992967794.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_7_calculation_0.2544500018706349.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_4_population_number_8_calculation_0.2534845607256835.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_0_calculation_0.21429935592891175.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_1_calculation_0.21331354284652765.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_2_calculation_0.21246745702326328.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_3_calculation_0.21149875719719255.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_4_calculation_0.21046334566789326.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_5_calculation_0.20944568498457544.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_6_calculation_0.20844258681781264.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_7_calculation_0.20747493964480265.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_27_33/genetic_algorithm_cluster_5_population_number_8_calculation_0.2063535421065878.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_31_38/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_0_calculation_0.13727378335377846.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_1_calculation_0.13641456048925163.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_2_calculation_0.13547254338375414.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_3_calculation_0.13443925184727634.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_4_calculation_0.13348522730777349.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_5_calculation_0.13248398552274349.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_6_calculation_0.13149324575588808.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_7_calculation_0.13047196480813053.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_32_42/genetic_algorithm_cluster_10_population_number_8_calculation_0.12948663649002137.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_0_calculation_0.10388718595818998.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_1_calculation_0.10319158732071816.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_2_calculation_0.10249719588654735.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_3_calculation_0.10149629918455753.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_4_calculation_0.1004812145197532.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_5_calculation_0.09949453601897665.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_6_calculation_0.09849714438437199.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_7_calculation_0.09749733682282129.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_36_07/genetic_algorithm_cluster_10_population_number_8_calculation_0.09649866462607878.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_37_49/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_39_10/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_0_calculation_0.16127427245853826.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_1_calculation_0.16043681219058928.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_2_calculation_0.15945434445172316.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_3_calculation_0.1584710628391098.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_4_calculation_0.15747938832810254.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_5_calculation_0.15647182262670936.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_6_calculation_0.15548557332711674.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_7_calculation_0.1544740855119435.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_47_30/genetic_algorithm_cluster_10_population_number_8_calculation_0.1534709520461403.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_19_53_45/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_00_34/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_0_calculation_0.1484455842161985.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_1_calculation_0.14747258029676039.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_2_calculation_0.14647432794517318.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_3_calculation_0.14546715998453638.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_4_calculation_0.14448703822900125.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_5_calculation_0.14349125443308158.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_6_calculation_0.14247532445258154.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_7_calculation_0.14140962977272153.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_08_44/genetic_algorithm_cluster_10_population_number_8_calculation_0.1404909203273194.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_10_44/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_26_07/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_26_25/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_41_49/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_43_13/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_46_12/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_52_01/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_20_55_11/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_02_36/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_17_27/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_18_30/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_19_06/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_23_09/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_25_45/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_25_50/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_31_05/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_31_31/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_32_04/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_32_44/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_33_44/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_46_13/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_47_33/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_21_21_48_36/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_29_50/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_31_43/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_34_09/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_0_calculation_0.12116058484034857.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_1_calculation_0.12049221588528543.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_2_calculation_0.11949316831027623.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_3_calculation_0.11849967558200729.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_4_calculation_0.11749861698486423.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_5_calculation_0.11649871011979344.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_6_calculation_0.11549690306858626.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_7_calculation_0.11449878710044295.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_41_10/genetic_algorithm_cluster_10_population_number_8_calculation_0.11349861765061171.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_03/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_0_calculation_0.11815952897408302.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_1_calculation_0.1174950342125636.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_2_calculation_0.11649996470902706.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_3_calculation_0.11549797789575125.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_4_calculation_0.11449988962292872.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_5_calculation_0.11349542326976422.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_6_calculation_0.11249710576244953.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_7_calculation_0.11149868899111279.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_52_10/genetic_algorithm_cluster_10_population_number_8_calculation_0.11049855539157116.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_56_36/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_0_calculation_0.27456765628576113.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_1_calculation_0.2738447910505652.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_2_calculation_0.2734850292613232.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_3_calculation_0.27230786203484914.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_4_calculation_0.27149521805209664.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_5_calculation_0.27048921437777157.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_6_calculation_0.2694870591189997.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_7_calculation_0.26849846149725093.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_10_57_14/genetic_algorithm_cluster_10_population_number_8_calculation_0.26748132237423444.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_0_calculation_0.6533869710565946.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_1_calculation_0.6524773478922677.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_2_calculation_0.6514750694493977.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_3_calculation_0.6504787698293765.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_4_calculation_0.6494365275702323.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_5_calculation_0.6484978281863579.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_6_calculation_0.6474827783172737.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_7_calculation_0.6464718106879055.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_3_population_number_8_calculation_0.6454842810023171.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_0_calculation_0.5645982053169847.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_1_calculation_0.5643551547415179.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_2_calculation_0.5634630249315811.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_3_calculation_0.5624912908567189.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_4_calculation_0.5614851830271805.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_5_calculation_0.5604994220796967.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_6_calculation_0.5594907447575653.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_7_calculation_0.5584936028333516.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_4_population_number_8_calculation_0.5574675634338947.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_0_calculation_0.47347442736923623.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_1_calculation_0.47214029086670595.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_2_calculation_0.47128824785042467.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_3_calculation_0.47047240644665056.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_4_calculation_0.4694740031676097.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_5_calculation_0.46849152352502993.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_6_calculation_0.46749608504218665.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_7_calculation_0.466483674484075.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_5_population_number_8_calculation_0.46549983362644476.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_0_calculation_0.3831834799517859.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_1_calculation_0.38242570001464454.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_2_calculation_0.38146908175205546.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_3_calculation_0.3804930137157372.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_4_calculation_0.37948272108997266.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_5_calculation_0.3784930218247968.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_6_calculation_0.37749667462968145.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_7_calculation_0.37649972305303087.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_6_population_number_8_calculation_0.3754965825575179.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_0_calculation_0.374393951292297.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_1_calculation_0.37330579968106187.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_2_calculation_0.37247033461933493.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_3_calculation_0.37149855706297913.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_4_calculation_0.3704841855310108.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_5_calculation_0.3694974076128482.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_6_calculation_0.3684987539251405.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_7_calculation_0.36748825457413076.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_7_population_number_8_calculation_0.36649883197407973.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_0_calculation_0.3228539886443732.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_1_calculation_0.32245445697198016.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_2_calculation_0.32148261993053834.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_3_calculation_0.32048533259418005.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_4_calculation_0.31949066060485803.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_5_calculation_0.3184884238749067.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_6_calculation_0.31749970405830413.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_7_calculation_0.31649578969129927.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_8_population_number_8_calculation_0.3154978874374039.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_0_calculation_0.274592509134502.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_1_calculation_0.27435829419974256.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_2_calculation_0.27338667823824964.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_3_calculation_0.27249660929063674.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_4_calculation_0.2714988345306766.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_5_calculation_0.27049956642990475.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_6_calculation_0.2694985402393872.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_7_calculation_0.2684987823066259.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_11_10_56/genetic_algorithm_cluster_9_population_number_8_calculation_0.26749559962833597.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/first_own_algorithm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_0_calculation_0.7295824884312848.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_1_calculation_0.729068267133131.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_2_calculation_0.7283735073344707.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_3_calculation_0.7271966810279138.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_4_calculation_0.7264794678406253.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_5_calculation_0.7254345636108893.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_6_calculation_0.7244687481921482.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_7_calculation_0.7234618661411307.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_3_population_number_8_calculation_0.7224664455048023.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_0_calculation_0.6267478248125764.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_1_calculation_0.6263159988564719.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_2_calculation_0.6254550416910007.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_3_calculation_0.6244846312048851.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_4_calculation_0.6233868673927456.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_5_calculation_0.6224987619873965.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_6_calculation_0.6214724269890096.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_7_calculation_0.6204371223200383.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_4_population_number_8_calculation_0.6194630324437471.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_0_calculation_0.45677497136356626.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_1_calculation_0.45645915120167435.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_2_calculation_0.4554873585250269.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_3_calculation_0.45449530581907416.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_4_calculation_0.45349218708112005.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_5_calculation_0.452480776818203.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_6_calculation_0.4514993215989246.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_7_calculation_0.4504999179655316.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_5_population_number_8_calculation_0.44949046154605127.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_0_calculation_0.38792243805659066.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_1_calculation_0.38744715636376176.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_2_calculation_0.38648326749919965.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_3_calculation_0.38535072998642.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_4_calculation_0.38448350483309524.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_5_calculation_0.38347892134824474.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_6_calculation_0.3824581966373454.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_7_calculation_0.38149522452362067.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_6_population_number_8_calculation_0.38049184842506173.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_0_calculation_0.3588734524628022.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_1_calculation_0.3584517594661233.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_2_calculation_0.3573725949208944.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_3_calculation_0.3564562866691213.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_4_calculation_0.3554912170068185.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_5_calculation_0.354494431216736.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_6_calculation_0.35349951031922144.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_7_calculation_0.3524929848378325.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_7_population_number_8_calculation_0.3514974795420562.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_0_calculation_0.2937180355153279.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_1_calculation_0.29338370534405894.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_2_calculation_0.29248173268695643.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_3_calculation_0.2914786492490376.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_4_calculation_0.29048016568459295.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_5_calculation_0.28948505544222086.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_6_calculation_0.2884937690799332.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_7_calculation_0.28749905952410065.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_8_population_number_8_calculation_0.2864998487953282.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_0_calculation_0.2874829364051715.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_1_calculation_0.2863660990774012.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_2_calculation_0.28530722906356515.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_3_calculation_0.2844749957095973.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_4_calculation_0.2834899194148757.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_5_calculation_0.2824940639883027.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_6_calculation_0.2814886194203377.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_7_calculation_0.28048494308257027.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/2020_11_22_12_36_41/genetic_algorithm_cluster_9_population_number_8_calculation_0.27949953360983554.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/KMeansAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clustered_algorithm_v0/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clustered_algorithm_v0/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helpers/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/GeneticAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/ModulDependencyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/ModulDependencyCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TurboMq/FileParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TurboMq/FileParse.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +278,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -24,14 +286,22 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="add-clustered-algorithm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1j6esWD3ALRDLQezQ268YsGoLxn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/output" />
     <property name="project.structure.last.edited" value="Project" />
@@ -43,18 +313,6 @@
       <recent name="D:\repos\java\clustered_algorithm_v0\output" />
       <recent name="D:\repos\java\clustered_algorithm_v0\input" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
@@ -74,6 +332,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -134,7 +393,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605112893329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add sth">
+      <created>1605119779797</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605119779797</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add sth">
+      <created>1605427511633</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605427511633</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add sth">
+      <created>1605980190499</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605980190499</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,22 +422,91 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit &amp; file operations" />
     <MESSAGE value="Implement first algorithm" />
     <MESSAGE value="Implement first own algorithm" />
     <MESSAGE value="add file change to mojoFm distance" />
     <MESSAGE value="add prepare population to genetic algorithm &#10;add calculation operation" />
     <MESSAGE value="add calculation operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add calculation operation" />
+    <MESSAGE value="add sth" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sth" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-764" y="151" key="#xdebugger.evaluate" timestamp="1605976731353">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-764" y="151" key="#xdebugger.evaluate/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605976731353" />
+    <state x="-764" y="151" key="#xdebugger.evaluate/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962028927" />
+    <state x="-1400" y="88" key="CommitChangelistDialog2" timestamp="1605980188566">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1400" y="88" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605980188566" />
+    <state width="533" height="553" key="DebuggerActiveHint" timestamp="1606030376582">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="533" height="553" key="DebuggerActiveHint/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606030376582" />
+    <state width="426" height="438" key="DebuggerActiveHint/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962305279" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1605641215471">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605641215471" />
+    <state width="937" height="144" key="GridCell.Tab.0.bottom" timestamp="1606037801708">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="144" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606037801708" />
+    <state width="746" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962173953" />
+    <state width="937" height="144" key="GridCell.Tab.0.center" timestamp="1606037801708">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="144" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606037801708" />
+    <state width="746" height="273" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962173953" />
+    <state width="937" height="144" key="GridCell.Tab.0.left" timestamp="1606037801708">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="144" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606037801708" />
+    <state width="746" height="273" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962173952" />
+    <state width="937" height="144" key="GridCell.Tab.0.right" timestamp="1606037801708">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="144" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606037801708" />
+    <state width="746" height="273" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962173953" />
+    <state width="937" height="252" key="GridCell.Tab.1.bottom" timestamp="1606031530661">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606031530661" />
+    <state width="746" height="273" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962174395" />
+    <state width="937" height="252" key="GridCell.Tab.1.center" timestamp="1606031530661">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="252" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606031530661" />
+    <state width="746" height="273" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962174394" />
+    <state width="937" height="252" key="GridCell.Tab.1.left" timestamp="1606031530661">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="252" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606031530661" />
+    <state width="746" height="273" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962174394" />
+    <state width="937" height="252" key="GridCell.Tab.1.right" timestamp="1606031530661">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="252" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606031530661" />
+    <state width="746" height="273" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605962174395" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605980192061">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605980192061" />
+    <state x="360" y="32" key="new project wizard" timestamp="1605641241406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="32" key="new project wizard/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1605641241406" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,6 +520,11 @@
           <url>file://$PROJECT_DIR$/src/Helpers/ModulDependencyCalculator.java</url>
           <line>76</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Helpers/GeneticAlgorithm.java</url>
+          <line>259</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

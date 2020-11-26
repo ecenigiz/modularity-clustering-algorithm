@@ -1,14 +1,12 @@
 import Entities.InputFileLine;
-import Helpers.Algorithms;
-import Helpers.FileOperations;
+import Helpers.*;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-import Helpers.GeneticAlgorithm;
-import Helpers.ModulDependencyCalculator;
+import TurboMq.TurboMQ;
 
 public class Main {
     static String date;
@@ -18,21 +16,30 @@ public class Main {
         date = getDate();
         folderPath = FileOperations.createFolder(date); //klasörün path i output\2020_10_19_21_49_23
 
+        int clusterCount = 10;
         String inputPath = "input/bash-inc-dep.txt";
-        ArrayList<InputFileLine> list = FileOperations.readInputFile(inputPath);
+        ArrayList<InputFileLine> listFirstAlgorithm = FileOperations.readInputFile(inputPath);
+        ArrayList<InputFileLine> listGeneticAlgorithm = FileOperations.readInputFile(inputPath);
+        ArrayList<InputFileLine> listKmeansAlgorithm = FileOperations.readInputFile(inputPath);
 
         Algorithms algorithms = new Algorithms(folderPath);
-        String outputPathFirstAlgorthm = algorithms.firstOwnAlgorithm(list);
+        String outputPathFirstAlgorthm = algorithms.firstOwnAlgorithm(listFirstAlgorithm);
 
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
-        String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(list);
+        String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
+
+        KMeansAlgorithm kMeansAlgorithm =new KMeansAlgorithm(folderPath);
+        String outputPathKmeansAlgorithm = kMeansAlgorithm.applyKMeansAlgorithm(listKmeansAlgorithm,clusterCount);
+
+        TurboMQ t = new TurboMQ();
+        String clusteredPath = "bash-gt.rsf";
+        System.out.println("Bash alg turbo hesapalaması : "+ t.TurboMQCalculate(inputPath, clusteredPath));
 
         ModulDependencyCalculator c = new ModulDependencyCalculator();
-
+/*
         //Calculation
-        String clusteredPath = "bash-gt.rsf";
         double calculateDependency = c.CalculateDependency(inputPath, clusteredPath);
-        System.out.println("Bash alg calculation: " + calculateDependency);
+        System.out.println("Bash alg modularity calculation: " + calculateDependency);
 
         //FirstOwnAlgorithm
         calculateDependency = c.CalculateDependency(inputPath, outputPathFirstAlgorthm);
@@ -40,7 +47,7 @@ public class Main {
 
         //GenetikAlgorithm random population
         calculateDependency = c.CalculateDependency(inputPath, outputPathGeneticAlgorithm);
-        System.out.println("Genetik algorithm calculation: " + calculateDependency);
+        System.out.println("Genetik algorithm calculation: " + calculateDependency);*/
     }
 
     public static String getDate() {
