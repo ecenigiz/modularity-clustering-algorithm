@@ -112,7 +112,6 @@ public class FileParse {
             for (i = 0; i < list.size(); i++) {
                 line = list.get(i);
                 dsm[name2ID.get(line.ChildLib)][name2ID.get(line.ParentLib)] = true;
-                dsm[name2ID.get(line.ParentLib)][name2ID.get(line.ChildLib)] = true;
             }
         } catch (Exception e) {
             System.out.println("dsm: "+ name2ID.get(line.ChildLib));

@@ -1,14 +1,11 @@
 import Entities.InputFileLine;
-import Helpers.Algorithms;
-import Helpers.FileOperations;
+import Helpers.*;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-import Helpers.GeneticAlgorithm;
-import Helpers.ModulDependencyCalculator;
 import TurboMq.TurboMQ;
 
 public class Main {
@@ -23,12 +20,16 @@ public class Main {
         String inputPath = "input/bash-inc-dep.txt";
         ArrayList<InputFileLine> listFirstAlgorithm = FileOperations.readInputFile(inputPath);
         ArrayList<InputFileLine> listGeneticAlgorithm = FileOperations.readInputFile(inputPath);
+        ArrayList<InputFileLine> listKmeansAlgorithm = FileOperations.readInputFile(inputPath);
 
         Algorithms algorithms = new Algorithms(folderPath);
         String outputPathFirstAlgorthm = algorithms.firstOwnAlgorithm(listFirstAlgorithm);
 
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
         String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
+
+        KMeansAlgorithm kMeansAlgorithm =new KMeansAlgorithm(folderPath);
+        String outputPathKmeansAlgorithm = kMeansAlgorithm.applyKMeansAlgorithm(listKmeansAlgorithm,clusterCount);
 
         TurboMQ t = new TurboMQ();
         String clusteredPath = "bash-gt.rsf";
