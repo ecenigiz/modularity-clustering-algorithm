@@ -19,7 +19,64 @@ public class KMeansAlgorithm {
         this.folderPath = folderPath;
     }
 
-    public String applyKMeansAlgorithm(ArrayList<InputFileLine> list, int clusterCount) throws IOException {
+    public Population applyKMeansAlgorithm(ArrayList<InputFileLine> list, int clusterCount) throws IOException {
+        Population population = preparePopulation(list, clusterCount);
+
+        FileOperations.createFile(folderPath, "kmeans_algorithm_cluster_" + clusterCount + "_population_number_calculation_" + population.DependencyCalculation, population.ClusteredItems);
+
+        return population;
+
+    }
+
+    public String applyKMeansWithBinarySearchAlgorithm(ArrayList<InputFileLine> list, int clusterCount) throws IOException {
+        Population selectedPopulation = preparePopulation(list, clusterCount);
+        boolean flag = false;
+        Population populationsBinaryNodeLeft, populationsBinaryNodeRight;
+
+        // cluster baslangıcı= n/2, bitişi 3n/2
+        List<String> col = new ArrayList<String>();
+        for (int i = 0; i < list.size(); i++) {
+            col.add(list.get(i).ChildLib);
+        }
+
+        int countOfDistincLine = (int) (col.stream().distinct().count());
+
+        int power = (int) Math.round(Math.log(countOfDistincLine) / Math.log(2));
+        int powerDivided2 = power / 2;
+
+        int maxClusterCount = powerDivided2, minClusterCount=powerDivided2+power;
+        //bunu 2^n e cek
+        while (!flag) {
+            //cluster-1 i buna atıyorum
+            populationsBinaryNodeLeft = preparePopulation(list, clusterCount - 1);
+            //cluster+1 i buna atıyorum
+            populationsBinaryNodeRight = preparePopulation(list, clusterCount + 1);
+
+            if ((clusterCount == minClusterCount) || (clusterCount == maxClusterCount)) {
+                flag = true;
+            }
+            else if ((selectedPopulation.DependencyCalculation >= populationsBinaryNodeLeft.DependencyCalculation)
+                    && (selectedPopulation.DependencyCalculation >= populationsBinaryNodeRight.DependencyCalculation)) {
+                flag = true;
+            }
+            //sağdakine öncelik veriyoruz. Küme sayısı artması iyi
+            else if (selectedPopulation.DependencyCalculation < populationsBinaryNodeRight.DependencyCalculation) {
+                selectedPopulation = populationsBinaryNodeRight;
+                clusterCount = clusterCount + 1;
+
+            } else {
+                selectedPopulation = populationsBinaryNodeLeft;
+                clusterCount = clusterCount - 1;
+            }
+        }
+
+        FileOperations.createFile(folderPath, "kmeans_algorithm_with_binary_search_cluster_count_" + clusterCount + "_population_number_calculation_" + selectedPopulation.DependencyCalculation, selectedPopulation.ClusteredItems);
+
+        return folderPath + "\\" + "kmeans_algorithm.txt";
+
+    }
+
+    private Population preparePopulation(ArrayList<InputFileLine> list, int clusterCount) throws IOException {
         ArrayList<Population> populations = new ArrayList<Population>();
         Population tempPopulation = new Population();
         ArrayList<InputFileLine> tempLines = new ArrayList<InputFileLine>();
@@ -45,20 +102,24 @@ public class KMeansAlgorithm {
         }
         //depended array-> noktaların varlığı oluyor.
 
-        clusterCount = 3;
-        int clusterSize = (distincLine.size() / clusterCount);
-
-        int[] centroid = {0, 1, 2};//= new int[clusterCount];
-        int[] centroidBefore = {0, 1, 2};
+        //%30 tolere edebiliyor
+        int clusterSize = (distincLine.size() / clusterCount) * 130 / 100;
+        int[] countOfEachClusterSize = new int[clusterCount];
+        int[] centroid = new int[clusterCount];//= new int[clusterCount];
+        int[] centroidBefore = new int[clusterCount];//= new int[clusterCount];
+        for (int i = 0; i < clusterCount; i++) {
+            centroid[i] = i;
+            centroidBefore[i] = i;
+        }
 
         HashMap<String, Integer> distanceEachCluster = new HashMap<String, Integer>();
-        int iterationCount = 1000;
         int centroidSameCount = 0;
         int iteration = 0;
-        //for (int iteration = 0; iteration < iterationCount; iteration++)
-        while (centroidSameCount<clusterCount) {
+
+        while (centroidSameCount < clusterCount) {
             //her küme için her nokta ile arasındaki
             distanceEachCluster = new HashMap<String, Integer>();
+            countOfEachClusterSize = new int[clusterCount];
             int distanceX = 0, distanceY = 0, distance = 0;
             int tempClusterName = -1, tempDistanceValue = 0;
             int minValueInCluster;
@@ -73,7 +134,7 @@ public class KMeansAlgorithm {
                             distanceX = i - centroid[c];
                             distanceY = j - centroid[c];
                             distance = Math.abs((distanceX * distanceX) + (distanceY * distanceY));
-                            if (distance < minValueInCluster) {
+                            if ((distance < minValueInCluster) && countOfEachClusterSize[c] <= clusterSize) {
                                 minValueInCluster = distance;
                                 tempClusterName = c;
                             }
@@ -81,6 +142,7 @@ public class KMeansAlgorithm {
                     }
                 }
                 distanceEachCluster.put(String.valueOf(i), tempClusterName);
+                countOfEachClusterSize[tempClusterName]++;
             }
 
             int[] sumOfEachCluster = new int[clusterCount];
@@ -99,7 +161,7 @@ public class KMeansAlgorithm {
             }
 
             centroidSameCount = 0;
-            //ortalamayı atamamız lazım
+            //ortalamayı atamamız lazım, before u düzenliyorum. if koşulu => eğer aynı ise sameCount artırıyor.
             for (int k = 0; k < clusterCount; k++) {
                 centroid[k] = averageOfEachCluster[k];
                 if (centroidBefore[k] == centroid[k]) {
@@ -127,14 +189,7 @@ public class KMeansAlgorithm {
         tempPopulation.ClusteredItems = tempLines;
         tempPopulation.DependencyCalculation = t.TurboMQCalculateWithList(list, tempPopulation.ClusteredItems);
         populations.add(tempPopulation);
-
-        for (
-                int i = 0; i < populations.size(); i++) {
-            String path = folderPath + "\\genetic_algorithm" + i + ".txt";
-            FileOperations.createFile(folderPath, "kmeans_algorithm_cluster_" + clusterCount + "_population_number_" + i + "_calculation_" + populations.get(i).DependencyCalculation, populations.get(i).ClusteredItems);
-        }
-
-        return folderPath + "\\" + "kmeans_algorithm.txt";
+        return populations.get(0);
 
     }
 }
