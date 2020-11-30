@@ -16,7 +16,7 @@ public class Main {
         date = getDate();
         folderPath = FileOperations.createFolder(date); //klasörün path i output\2020_10_19_21_49_23
 
-        int clusterCount = 10;
+        int clusterCount = 4;
         String inputPath = "input/bash-inc-dep.txt";
         ArrayList<InputFileLine> listFirstAlgorithm = FileOperations.readInputFile(inputPath);
         ArrayList<InputFileLine> listGeneticAlgorithm = FileOperations.readInputFile(inputPath);
@@ -26,10 +26,13 @@ public class Main {
         String outputPathFirstAlgorthm = algorithms.firstOwnAlgorithm(listFirstAlgorithm);
 
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(folderPath);
-        String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
+        //String outputPathGeneticAlgorithm = geneticAlgorithm.applyGeneticALgorithm(listGeneticAlgorithm, clusterCount);
 
         KMeansAlgorithm kMeansAlgorithm =new KMeansAlgorithm(folderPath);
-        String outputPathKmeansAlgorithm = kMeansAlgorithm.applyKMeansAlgorithm(listKmeansAlgorithm,clusterCount);
+        var populationKmeansAlgorithm = kMeansAlgorithm.applyKMeansAlgorithm(listKmeansAlgorithm,clusterCount);
+
+        KMeansAlgorithm kMeansWithBinarySearchAlgorithm =new KMeansAlgorithm(folderPath);
+        String outputPathKmeansWithBinarySearchAlgorithm = kMeansAlgorithm.applyKMeansWithBinarySearchAlgorithm(listKmeansAlgorithm,clusterCount);
 
         TurboMQ t = new TurboMQ();
         String clusteredPath = "bash-gt.rsf";

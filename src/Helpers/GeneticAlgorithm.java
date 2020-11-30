@@ -181,9 +181,6 @@ public class GeneticAlgorithm {
 
                     } else {
                         itemInPopulationItemNew.ClusterName = itemInPopulationJ.get(k).ClusterName;
-                        // itemInPopulationItemNew.IsClustered = true;
-                        //itemInPopulationItemNew.ChildLib = itemInPopulationJ.get(k).ChildLib;
-                        //itemInPopulationItemNew.Name = itemInPopulationJ.get(k).Name;
                     }
                     itemInPopulationNew.add(itemInPopulationItemNew);
                 }
